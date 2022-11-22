@@ -5,7 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="81823a6c-4f91-41e5-86d1-6f7e1b545225" name="Changes" comment="Setup">
+      <change afterPath="$PROJECT_DIR$/test/controllers/AppStoreAPITest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/models/EducationAppTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JenneferCullinan.iml" beforeDir="false" afterPath="$PROJECT_DIR$/JenneferCullinan.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +37,10 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
@@ -60,7 +67,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1669148336109</updated>
-      <workItem from="1669148337502" duration="2932000" />
+      <workItem from="1669148337502" duration="4147000" />
     </task>
     <task id="LOCAL-00001" summary="Setup">
       <created>1669150692281</created>
@@ -69,7 +76,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669150692281</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Setup">
+      <created>1669151537092</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1669151537092</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
