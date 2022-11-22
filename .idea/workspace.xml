@@ -4,28 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="81823a6c-4f91-41e5-86d1-6f7e1b545225" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/xstream_1_4_17.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JenneferCullinan.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xstream-1.4.17.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controllers/AppStoreAPI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controllers/DeveloperAPI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/Driver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/Developer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/EducationApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/GameApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/ProductivityApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/Rating.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/ISerializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/RatingUtility.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/ScannerInput.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/Utilities.java" afterDir="false" />
+    <list default="true" id="81823a6c-4f91-41e5-86d1-6f7e1b545225" name="Changes" comment="Setup">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,8 +60,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1669148336109</updated>
-      <workItem from="1669148337502" duration="2171000" />
+      <workItem from="1669148337502" duration="2932000" />
     </task>
+    <task id="LOCAL-00001" summary="Setup">
+      <created>1669150692281</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1669150692281</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -92,10 +80,26 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Setup" />
+    <option name="LAST_COMMIT_MESSAGE" value="Setup" />
   </component>
 </project>
