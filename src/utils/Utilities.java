@@ -59,6 +59,10 @@ public class Utilities {
         return ((numberToCheck >= min) && (numberToCheck <= max));
     }
 
+    public static boolean validDoubleRange (double numberToCheck, double min, double max) {
+        return ((numberToCheck >= min) && (numberToCheck <= max));
+    }
+
     /**
      * This method returns true if the numberToCheck is zero or more.
      *

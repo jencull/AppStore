@@ -7,7 +7,7 @@ import java.util.List;
 
 public abstract class App {
 
-    private List<Developer> developer;
+    private Developer developer;
     private String appName = "No app name";
     private double appSize = 0;
     private double appVersion = 1.0;
@@ -15,39 +15,55 @@ public abstract class App {
     private List<Rating> ratings = new ArrayList<>();
 
     public App (Developer developer, String appName, double appSize, double appVersion, double appCost) {
-        getDeveloper();
+        this.developer = new Developer(developer.getDeveloperName(), developer.getDeveloperWebsite());
         this.appName = appName;
-        this.appSize = appSize;
-        this.appVersion = appVersion;
+
+        if (Utilities.validRange(appSize, 1,1000)) {
+            this.appSize = appSize;
+        }
+
+        if (Utilities.validDoubleRange(appVersion, 1.0, 5.0)) {
+            this.appVersion = appVersion;
+        }
+
         this.appCost = appCost;
 
     }
 
+    public Developer getDeveloper() {
+        return developer;
+    }
+
+    public void setDeveloper(Developer developer) {
+        this.developer = developer;
+    }
+
     public String toString () {
-        return developer + ", " + appName + ", " + appSize + ", " + appVersion + ". " + appCost + ". ";
+        return appName + " (Version " + appVersion + ") " + getDeveloper().toString()
+                + " " + appSize + "MB Cost: " + appCost + " " + listRatings();
+    }
+
+    public String appSummary () {
+        return developer + " " + appName + "(V" + appVersion + ")"
+                + ", €" + appCost + ". Rating: " + calculateRating();
     }
 
     public boolean addRating (Rating rating) { return ratings.add(rating); }
-
-    public String appSummary () {
-        return appName + " (V" + appVersion + ") by " + developer
-                + ", €" + appCost + ". Rating: " + calculateRating();
-    }
 
     public double calculateRating () {
         if (ratings.isEmpty()) {
             return 0;
         }
         else {
-            double total = 0;
+            double totalStars = 0;
             int numRatings = 0;
             for (Rating rating: ratings) {
                 if (rating.getNumberOfStars() != 0) {
-                    total++;
+                    totalStars += rating.getNumberOfStars();
                     numRatings++;
                 }
             }
-            return total/numRatings;
+            return totalStars/numRatings;
         }
     }
 
@@ -64,15 +80,35 @@ public abstract class App {
         }
     }
 
+    public boolean updateRating (int indexToUpdate, String raterName, String ratingComment) {
+        Rating findRating = findRating(indexToUpdate);
+
+        if (findRating != null) {
+            findRating.setRaterName(raterName);
+            findRating.setRatingComment(ratingComment);
+        }
+        return false;
+    }
+
+    public Rating deleteRating (int indexToDelete) {
+        if (isValidIndex(indexToDelete)) {
+            return ratings.remove(indexToDelete);
+        }
+        return null;
+    }
+
+    public Rating findRating (int index) {
+        if (isValidIndex(index)) {
+            return ratings.get(index);
+        }
+        return null;
+    }
+
+    public boolean isValidIndex (int index) {
+        return index >= 0 && index <= this.ratings.size();
+    }
+
     public abstract boolean isRecommendedApp ();
-
-    public List<Developer> getDeveloper() {
-        return developer;
-    }
-
-    public void setDeveloper(List<Developer> developer) {
-        this.developer = developer;
-    }
 
     public String getAppName() {
         return appName;
@@ -82,8 +118,12 @@ public abstract class App {
         this.appName = appName;
     }
 
+    //check this one, if statement may not be needed
     public double getAppSize() {
-        return appSize;
+        if (appSize >= 1 && appSize <=1000) {
+            return appSize;
+        }
+        else  return appSize = 0;
     }
 
     public void setAppSize(double appSize) {
@@ -97,13 +137,16 @@ public abstract class App {
     }
 
     public void setAppVersion(double appVersion) {
-        if (appVersion >= 1.0) {
+        if (Utilities.validDoubleRange(appVersion, 1.0, 5.0)) {
             this.appVersion = appVersion;
         }
     }
 
     public double getAppCost() {
-        return appCost;
+        if (appCost > 0) {
+            return appCost;
+        }
+        else return 0;
     }
 
     public void setAppCost(double appCost) {
@@ -116,7 +159,4 @@ public abstract class App {
         return ratings;
     }
 
-    public void setRatings(List<Rating> ratings) {
-        this.ratings = ratings;
-    }
 }
