@@ -19,7 +19,7 @@ public class EducationApp extends App {
     @Override
     public boolean isRecommendedApp() {
 
-        if ((super.getAppCost()>0.99) && (super.calculateRating()>=3.5) && (level >= 3)) {
+        if ((super.getAppCost() > 0.99) && (super.calculateRating() >= 3.5) && (level >= 3)) {
             return true;
         }
         else

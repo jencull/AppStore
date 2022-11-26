@@ -4,14 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="81823a6c-4f91-41e5-86d1-6f7e1b545225" name="Changes" comment="23rd Nov 2023">
+    <list default="true" id="81823a6c-4f91-41e5-86d1-6f7e1b545225" name="Changes" comment="EduApp tests passed">
+      <change afterPath="$PROJECT_DIR$/test/models/GameAppTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/models/ProductivityAppTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/App.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/models/EducationApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/EducationApp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/models/GameApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/GameApp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/models/ProductivityApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/ProductivityApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/Utilities.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/Utilities.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/controllers/AppStoreAPITest.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +73,7 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration name="EducationAppTest$Getters.getAppSize" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="GameAppTest$ObjectStateMethods.appSummaryReturnsCorrectString" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JenneferCullinan" />
       <extension name="coverage">
         <pattern>
@@ -82,47 +81,15 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="models.EducationAppTest" />
-      <option name="MAIN_CLASS_NAME" value="models.EducationAppTest$Getters" />
-      <option name="METHOD_NAME" value="getAppSize" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="EducationAppTest$Getters.getAppVersion" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="JenneferCullinan" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="models.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="models.EducationAppTest" />
-      <option name="MAIN_CLASS_NAME" value="models.EducationAppTest$Getters" />
-      <option name="METHOD_NAME" value="getAppVersion" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="EducationAppTest$ObjectStateMethods.appSummaryReturnsCorrectString" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="JenneferCullinan" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="models.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="models.EducationAppTest" />
-      <option name="MAIN_CLASS_NAME" value="models.EducationAppTest$ObjectStateMethods" />
+      <option name="PACKAGE_NAME" value="models.GameAppTest" />
+      <option name="MAIN_CLASS_NAME" value="models.GameAppTest$ObjectStateMethods" />
       <option name="METHOD_NAME" value="appSummaryReturnsCorrectString" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EducationAppTest$ObjectStateMethods.toStringReturnsCorrectString" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="GameAppTest$RecommendedApp.appIsNotRecommendedWhenRatingIsLessThan4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JenneferCullinan" />
       <extension name="coverage">
         <pattern>
@@ -130,15 +97,15 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="models.EducationAppTest" />
-      <option name="MAIN_CLASS_NAME" value="models.EducationAppTest$ObjectStateMethods" />
-      <option name="METHOD_NAME" value="toStringReturnsCorrectString" />
+      <option name="PACKAGE_NAME" value="models.GameAppTest" />
+      <option name="MAIN_CLASS_NAME" value="models.GameAppTest$RecommendedApp" />
+      <option name="METHOD_NAME" value="appIsNotRecommendedWhenRatingIsLessThan4" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EducationAppTest$Setters.setAppVersion" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="GameAppTest$Setters.setMultiplayer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JenneferCullinan" />
       <extension name="coverage">
         <pattern>
@@ -146,9 +113,41 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="models.EducationAppTest" />
-      <option name="MAIN_CLASS_NAME" value="models.EducationAppTest$Setters" />
-      <option name="METHOD_NAME" value="setAppVersion" />
+      <option name="PACKAGE_NAME" value="models.GameAppTest" />
+      <option name="MAIN_CLASS_NAME" value="models.GameAppTest$Setters" />
+      <option name="METHOD_NAME" value="setMultiplayer" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProductivityAppTest$Getters$Setters$ObjectStateMethods$RecommendedApp.appIsNotRecommendedWhenRatingIsLessThan2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JenneferCullinan" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="models.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="models.ProductivityAppTest.Getters.Setters.ObjectStateMethods" />
+      <option name="MAIN_CLASS_NAME" value="models.ProductivityAppTest$Getters$Setters$ObjectStateMethods$RecommendedApp" />
+      <option name="METHOD_NAME" value="appIsNotRecommendedWhenRatingIsLessThan2" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProductivityAppTest$Getters$Setters$ObjectStateMethods$RecommendedApp.appIsRecommendedWhenAllOfTheConditionsAreTrue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JenneferCullinan" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="models.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="models.ProductivityAppTest.Getters.Setters.ObjectStateMethods" />
+      <option name="MAIN_CLASS_NAME" value="models.ProductivityAppTest$Getters$Setters$ObjectStateMethods$RecommendedApp" />
+      <option name="METHOD_NAME" value="appIsRecommendedWhenAllOfTheConditionsAreTrue" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -156,11 +155,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.EducationAppTest$ObjectStateMethods.toStringReturnsCorrectString" />
-        <item itemvalue="JUnit.EducationAppTest$ObjectStateMethods.appSummaryReturnsCorrectString" />
-        <item itemvalue="JUnit.EducationAppTest$Setters.setAppVersion" />
-        <item itemvalue="JUnit.EducationAppTest$Getters.getAppVersion" />
-        <item itemvalue="JUnit.EducationAppTest$Getters.getAppSize" />
+        <item itemvalue="JUnit.GameAppTest$RecommendedApp.appIsNotRecommendedWhenRatingIsLessThan4" />
+        <item itemvalue="JUnit.GameAppTest$ObjectStateMethods.appSummaryReturnsCorrectString" />
+        <item itemvalue="JUnit.GameAppTest$Setters.setMultiplayer" />
+        <item itemvalue="JUnit.ProductivityAppTest$Getters$Setters$ObjectStateMethods$RecommendedApp.appIsRecommendedWhenAllOfTheConditionsAreTrue" />
+        <item itemvalue="JUnit.ProductivityAppTest$Getters$Setters$ObjectStateMethods$RecommendedApp.appIsNotRecommendedWhenRatingIsLessThan2" />
       </list>
     </recent_temporary>
   </component>
@@ -176,7 +175,7 @@
       <workItem from="1669224674552" duration="10715000" />
       <workItem from="1669314022513" duration="308000" />
       <workItem from="1669314545974" duration="2650000" />
-      <workItem from="1669317634360" duration="17788000" />
+      <workItem from="1669317634360" duration="27491000" />
     </task>
     <task id="LOCAL-00001" summary="Setup">
       <created>1669150692281</created>
@@ -206,7 +205,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669236452395</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="EduApp tests passed">
+      <created>1669411044836</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1669411044836</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -239,6 +245,7 @@
     <MESSAGE value="Setup" />
     <MESSAGE value="testing setup" />
     <MESSAGE value="23rd Nov 2023" />
-    <option name="LAST_COMMIT_MESSAGE" value="23rd Nov 2023" />
+    <MESSAGE value="EduApp tests passed" />
+    <option name="LAST_COMMIT_MESSAGE" value="EduApp tests passed" />
   </component>
 </project>

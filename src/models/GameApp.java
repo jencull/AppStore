@@ -31,7 +31,7 @@ public class GameApp extends App {
     }
 
     public String appSummary () {
-        return super.appSummary() + " Multiplayer: " +  isMultiplayer;
+        return super.appSummary() + "Multiplayer: " +  isMultiplayer;
     }
 
     public String toString () {

@@ -24,7 +24,7 @@ public class ProductivityApp extends App {
     }
 
     public String toString () {
-        return super.toString();
+        return super.toString() + " Ratings (" + calculateRating() + ")";
     }
 
 }
