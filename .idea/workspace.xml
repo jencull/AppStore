@@ -4,13 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="81823a6c-4f91-41e5-86d1-6f7e1b545225" name="Changes" comment="EduApp tests passed">
-      <change afterPath="$PROJECT_DIR$/test/models/GameAppTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/models/ProductivityAppTest.java" afterDir="false" />
+    <list default="true" id="81823a6c-4f91-41e5-86d1-6f7e1b545225" name="Changes" comment="Game/Prod app testing complete">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/EducationApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/EducationApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/GameApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/GameApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/ProductivityApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/ProductivityApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/AppStoreAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/AppStoreAPI.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +60,8 @@
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;coverage&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -72,7 +69,7 @@
       <recent name="$PROJECT_DIR$/lib" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.GameAppTest$ObjectStateMethods.appSummaryReturnsCorrectString">
     <configuration name="GameAppTest$ObjectStateMethods.appSummaryReturnsCorrectString" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JenneferCullinan" />
       <extension name="coverage">
@@ -175,7 +172,9 @@
       <workItem from="1669224674552" duration="10715000" />
       <workItem from="1669314022513" duration="308000" />
       <workItem from="1669314545974" duration="2650000" />
-      <workItem from="1669317634360" duration="27491000" />
+      <workItem from="1669317634360" duration="30417000" />
+      <workItem from="1669477243072" duration="10929000" />
+      <workItem from="1669489760416" duration="525000" />
     </task>
     <task id="LOCAL-00001" summary="Setup">
       <created>1669150692281</created>
@@ -212,7 +211,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669411044836</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Game/Prod app testing complete">
+      <created>1669469507981</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1669469507981</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -246,6 +252,7 @@
     <MESSAGE value="testing setup" />
     <MESSAGE value="23rd Nov 2023" />
     <MESSAGE value="EduApp tests passed" />
-    <option name="LAST_COMMIT_MESSAGE" value="EduApp tests passed" />
+    <MESSAGE value="Game/Prod app testing complete" />
+    <option name="LAST_COMMIT_MESSAGE" value="Game/Prod app testing complete" />
   </component>
 </project>
