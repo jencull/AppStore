@@ -12,6 +12,7 @@ import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Collections;
 
 import static java.lang.Math.random;
 import static utils.RatingUtility.generateRandomRating;
@@ -257,6 +258,13 @@ public class AppStoreAPI implements ISerializer {
         }
     }
 
+    /**
+     * Method to list all apps by a selected developer by comparing the developer object
+     * with the apps in the arrayList
+     * @param developer object to use for search comparison
+     * @return string built from returned matching apps
+     */
+
     public String listAllAppsByChosenDeveloper (Developer developer) {
         String list = "";
 
@@ -273,23 +281,67 @@ public class AppStoreAPI implements ISerializer {
             }
     }
 
+    /**
+     * Method to count the number of apps by a specified developer
+     * @param developer object passed in for comparison search
+     * @return int representing the number of apps written by the specified developer
+     */
+    public int numberOfAppsByChosenDeveloper (Developer developer) {
+        int total = 0;
+
+        for (App app : apps) {
+            if (app.getDeveloper().equals(developer)) {
+                total++;
+            }
+        }
+        if (total == 0) {
+            return 0;
+        }
+        else {
+            return total;
+        }
+    }
+
+    /**
+     * Method to generate a random number to select an app from the arrayList
+     * @return App located at the random index number
+     * credit to https://www.educative.io/answers/how-to-generate-random-numbers-in-java for
+     * how to change a double to an int while using the Math.random method
+     */
+    public App randomApp () {
+        int max = apps.size() - 1;
+        int min = 0;
+        int index = (int)Math.floor(Math.random()*(max-min+1)+min);
+
+        if (apps.isEmpty()) {
+            return null;
+        }
+        return apps.get(index);
+    }
+
+    /**
+     * https://www.geeksforgeeks.org/how-to-swap-two-elements-in-an-arraylist-in-java
+     * @param apps the arrayList
+     * @param i int representing the index number of first object in swap
+     * @param j int representing the index number of second object in swap
+     */
+
+    private void swapApps (List <App> apps, int i, int j) {
+        Collections.swap(apps, i, j);
+    }
+
+    public void sortAppsByNameAscending(){
+        int j = 1;
+        int i = 0;
+
+        while (j <= apps.size()){
+            apps.get(i).getAppName().compareToIgnoreCase(apps.get(j).getAppName());
+            swapApps (apps, i, j);
+            j++; i++;
+        }
+    }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    //TODO refer to the spec and add in the required methods here (make note of which methods are given to you first!)
 
     public void simulateRatings(){
         for (App app :apps) {
@@ -345,7 +397,7 @@ public class AppStoreAPI implements ISerializer {
 
         //doing the actual serialisation to an XML file
         ObjectInputStream in = xstream.createObjectInputStream(new FileReader(fileName()));
-        apps = (List<App>) in.readObject();
+        apps = (ArrayList<App>) in.readObject(); //cast from List<App> to ArrayList<App> by Jen
         in.close();
     }
 

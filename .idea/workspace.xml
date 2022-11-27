@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="81823a6c-4f91-41e5-86d1-6f7e1b545225" name="Changes" comment="Game/Prod app testing complete">
+    <list default="true" id="81823a6c-4f91-41e5-86d1-6f7e1b545225" name="Changes" comment="26th Nov">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/controllers/AppStoreAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/AppStoreAPI.java" afterDir="false" />
     </list>
@@ -174,7 +174,7 @@
       <workItem from="1669314545974" duration="2650000" />
       <workItem from="1669317634360" duration="30417000" />
       <workItem from="1669477243072" duration="10929000" />
-      <workItem from="1669489760416" duration="525000" />
+      <workItem from="1669489760416" duration="8063000" />
     </task>
     <task id="LOCAL-00001" summary="Setup">
       <created>1669150692281</created>
@@ -218,7 +218,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669469507981</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="26th Nov">
+      <created>1669490328303</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1669490328303</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -253,6 +260,7 @@
     <MESSAGE value="23rd Nov 2023" />
     <MESSAGE value="EduApp tests passed" />
     <MESSAGE value="Game/Prod app testing complete" />
-    <option name="LAST_COMMIT_MESSAGE" value="Game/Prod app testing complete" />
+    <MESSAGE value="26th Nov" />
+    <option name="LAST_COMMIT_MESSAGE" value="26th Nov" />
   </component>
 </project>
