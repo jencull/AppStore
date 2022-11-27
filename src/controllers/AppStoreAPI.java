@@ -44,7 +44,7 @@ public class AppStoreAPI implements ISerializer {
      * Method adds an app to the arrayList
      * @param app object to be added to arrayList
      */
-    public boolean add(App app) {
+    public boolean addApp (App app) {
         boolean isAdded = false;
 
         if (isAdded) {
