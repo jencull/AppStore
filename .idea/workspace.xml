@@ -7,7 +7,6 @@
     <list default="true" id="81823a6c-4f91-41e5-86d1-6f7e1b545225" name="Changes" comment="AppStoreAPI written">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/controllers/AppStoreAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/AppStoreAPI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/DeveloperAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/DeveloperAPI.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +53,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/jennefercullinan/Library/CloudStorage/OneDrive-WaterfordInstituteofTechnology/JavaAssign2Sem3/JenneferCullinan&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/jennefercullinan/Library/CloudStorage/OneDrive-SouthEastTechnologicalUniversity(WaterfordCampus)/JavaAssign2Sem3/JenneferCullinan&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -70,8 +69,8 @@
       <recent name="$PROJECT_DIR$/lib" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.AppStoreAPITest">
-    <configuration name="AppStoreAPITest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.AppStoreAPITest$ListingMethods.ListAllAppsAboveOrEqualAStarRatingReturnsAppsWhenArrayListHasApps">
+    <configuration name="AppStoreAPITest$ListingMethods.ListAllAppsAboveOrEqualAStarRatingReturnsAppsWhenArrayListHasApps" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JenneferCullinan" />
       <extension name="coverage">
         <pattern>
@@ -79,72 +78,73 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="controllers" />
-      <option name="MAIN_CLASS_NAME" value="controllers.AppStoreAPITest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="GameAppTest$ObjectStateMethods.appSummaryReturnsCorrectString" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="JenneferCullinan" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="models.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="models.GameAppTest" />
-      <option name="MAIN_CLASS_NAME" value="models.GameAppTest$ObjectStateMethods" />
-      <option name="METHOD_NAME" value="appSummaryReturnsCorrectString" />
+      <option name="PACKAGE_NAME" value="controllers.AppStoreAPITest" />
+      <option name="MAIN_CLASS_NAME" value="controllers.AppStoreAPITest$ListingMethods" />
+      <option name="METHOD_NAME" value="ListAllAppsAboveOrEqualAStarRatingReturnsAppsWhenArrayListHasApps" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GameAppTest$RecommendedApp.appIsNotRecommendedWhenRatingIsLessThan4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AppStoreAPITest$ListingMethods.ListAllAppsAboveOrEqualAStarRatingReturnsNoAppsWhenArrayIsEmpty" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JenneferCullinan" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="models.*" />
+          <option name="PATTERN" value="controllers.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="models.GameAppTest" />
-      <option name="MAIN_CLASS_NAME" value="models.GameAppTest$RecommendedApp" />
-      <option name="METHOD_NAME" value="appIsNotRecommendedWhenRatingIsLessThan4" />
+      <option name="PACKAGE_NAME" value="controllers.AppStoreAPITest" />
+      <option name="MAIN_CLASS_NAME" value="controllers.AppStoreAPITest$ListingMethods" />
+      <option name="METHOD_NAME" value="ListAllAppsAboveOrEqualAStarRatingReturnsNoAppsWhenArrayIsEmpty" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GameAppTest$Setters.setMultiplayer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AppStoreAPITest$ListingMethods.ListAllAppsByNameReturnsAppsWhenArrayListHasApps" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JenneferCullinan" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="models.*" />
+          <option name="PATTERN" value="controllers.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="models.GameAppTest" />
-      <option name="MAIN_CLASS_NAME" value="models.GameAppTest$Setters" />
-      <option name="METHOD_NAME" value="setMultiplayer" />
+      <option name="PACKAGE_NAME" value="controllers.AppStoreAPITest" />
+      <option name="MAIN_CLASS_NAME" value="controllers.AppStoreAPITest$ListingMethods" />
+      <option name="METHOD_NAME" value="ListAllAppsByNameReturnsAppsWhenArrayListHasApps" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ProductivityAppTest$Getters$Setters$ObjectStateMethods$RecommendedApp.appIsRecommendedWhenAllOfTheConditionsAreTrue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AppStoreAPITest$ListingMethods.ListAllAppsByNameReturnsNoAppsWhenArrayListIsEmpty" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JenneferCullinan" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="models.*" />
+          <option name="PATTERN" value="controllers.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="models.ProductivityAppTest.Getters.Setters.ObjectStateMethods" />
-      <option name="MAIN_CLASS_NAME" value="models.ProductivityAppTest$Getters$Setters$ObjectStateMethods$RecommendedApp" />
-      <option name="METHOD_NAME" value="appIsRecommendedWhenAllOfTheConditionsAreTrue" />
+      <option name="PACKAGE_NAME" value="controllers.AppStoreAPITest" />
+      <option name="MAIN_CLASS_NAME" value="controllers.AppStoreAPITest$ListingMethods" />
+      <option name="METHOD_NAME" value="ListAllAppsByNameReturnsNoAppsWhenArrayListIsEmpty" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AppStoreAPITest$ListingMethods.listAllProductivityAppsReturnsAppsWhenArrayListHasApps" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JenneferCullinan" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="controllers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="controllers.AppStoreAPITest" />
+      <option name="MAIN_CLASS_NAME" value="controllers.AppStoreAPITest$ListingMethods" />
+      <option name="METHOD_NAME" value="listAllProductivityAppsReturnsAppsWhenArrayListHasApps" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -152,11 +152,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.AppStoreAPITest" />
-        <item itemvalue="JUnit.GameAppTest$RecommendedApp.appIsNotRecommendedWhenRatingIsLessThan4" />
-        <item itemvalue="JUnit.GameAppTest$ObjectStateMethods.appSummaryReturnsCorrectString" />
-        <item itemvalue="JUnit.GameAppTest$Setters.setMultiplayer" />
-        <item itemvalue="JUnit.ProductivityAppTest$Getters$Setters$ObjectStateMethods$RecommendedApp.appIsRecommendedWhenAllOfTheConditionsAreTrue" />
+        <item itemvalue="JUnit.AppStoreAPITest$ListingMethods.ListAllAppsAboveOrEqualAStarRatingReturnsAppsWhenArrayListHasApps" />
+        <item itemvalue="JUnit.AppStoreAPITest$ListingMethods.ListAllAppsAboveOrEqualAStarRatingReturnsNoAppsWhenArrayIsEmpty" />
+        <item itemvalue="JUnit.AppStoreAPITest$ListingMethods.ListAllAppsByNameReturnsAppsWhenArrayListHasApps" />
+        <item itemvalue="JUnit.AppStoreAPITest$ListingMethods.ListAllAppsByNameReturnsNoAppsWhenArrayListIsEmpty" />
+        <item itemvalue="JUnit.AppStoreAPITest$ListingMethods.listAllProductivityAppsReturnsAppsWhenArrayListHasApps" />
       </list>
     </recent_temporary>
   </component>
@@ -174,7 +174,9 @@
       <workItem from="1669314545974" duration="2650000" />
       <workItem from="1669317634360" duration="30417000" />
       <workItem from="1669477243072" duration="10929000" />
-      <workItem from="1669489760416" duration="8340000" />
+      <workItem from="1669489760416" duration="14214000" />
+      <workItem from="1669634298085" duration="4511000" />
+      <workItem from="1669656755249" duration="14375000" />
     </task>
     <task id="LOCAL-00001" summary="Setup">
       <created>1669150692281</created>
@@ -232,7 +234,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669557840006</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="AppStoreAPI written">
+      <created>1669558106958</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1669558106958</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

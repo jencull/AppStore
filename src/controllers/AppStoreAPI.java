@@ -45,12 +45,7 @@ public class AppStoreAPI implements ISerializer {
      * @param app object to be added to arrayList
      */
     public boolean addApp (App app) {
-        boolean isAdded = false;
-
-        if (isAdded) {
-            return apps.add(app);
-        }
-        else return isAdded;
+        return apps.add(app);
     }
 
     /**
@@ -88,6 +83,88 @@ public class AppStoreAPI implements ISerializer {
     }
 
     /**
+     * method to update the education app details
+     * @param indexToUpdate int representing the index number of the app in the arrayList
+     * @param appName String representing the new name
+     * @param appSize double representing the new size
+     * @param appCost double representing the new cost
+     * @param level int representing the new level
+     * @return true if app updated, false if app not found
+     */
+    public boolean updateEducationApp (int indexToUpdate, String appName, double appSize, double appVersion, double appCost, int level) {
+
+        App foundApp = getAppByIndex(indexToUpdate);
+
+        if ((foundApp != null) && (foundApp instanceof EducationApp)) {
+
+            foundApp.setAppName(appName);
+            foundApp.setAppSize(appSize);
+            foundApp.setAppVersion(appVersion);
+            foundApp.setAppCost(appCost);
+            ((EducationApp)foundApp).setLevel(level);
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
+
+    /**
+     * Method to update info in productivity apps
+     * @param indexToUpdate in representing the index number of the object in the arrayList
+     * @param appName String representing the name of the app
+     * @param appSize double representing the size of the app
+     * @param appVersion double representing the version of the app
+     * @param appCost double representing the cost of the app
+     * @return true if the app is updated, false if app does not exist
+     */
+    public boolean updateProductivityApp (int indexToUpdate, String appName, double appSize, double appVersion, double appCost) {
+
+        App foundApp = getAppByIndex(indexToUpdate);
+
+        if ((foundApp != null) && (foundApp instanceof ProductivityApp)) {
+
+            foundApp.setAppName(appName);
+            foundApp.setAppSize(appSize);
+            foundApp.setAppVersion(appVersion);
+            foundApp.setAppCost(appCost);
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
+
+    /**
+     * Method to update the info held on a game app
+     * @param indexToUpdate int representing the index number of the object in the arrayList
+     * @param appName String representing the name of the app
+     * @param appSize double representing the size of the app
+     * @param appVersion double representing the version of the app
+     * @param appCost double representing the cost of the app
+     * @param isMultiplayer boolean, true if game is multiplayer, false otherwise
+     * @return true if app is updated, false if does not exist
+     */
+    public boolean updateGameApp (int indexToUpdate, String appName, double appSize, double appVersion,
+                                  double appCost, boolean isMultiplayer) {
+
+        App foundApp = getAppByIndex(indexToUpdate);
+
+        if ((foundApp != null) && (foundApp instanceof GameApp)) {
+
+            foundApp.setAppName(appName);
+            foundApp.setAppSize(appSize);
+            foundApp.setAppVersion(appVersion);
+            foundApp.setAppCost(appCost);
+            ((GameApp)foundApp).setMultiplayer(isMultiplayer);
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
+
+    /**
      * search for an app by name
      * @param name String representing the name of the app
      * @return the app if exists, otherwise null
@@ -113,7 +190,7 @@ public class AppStoreAPI implements ISerializer {
         String list = "";
 
         for (App app : apps) {
-            list += "\n" + apps.indexOf(app) + ": " + app;
+            list += "\n" + apps.indexOf(apps) + ": " + apps;
         }
         if (apps.isEmpty()) {
             return "No apps";
@@ -330,14 +407,19 @@ public class AppStoreAPI implements ISerializer {
         Collections.swap(apps, i, j);
     }
 
+    /**
+     *
+     */
     public void sortAppsByNameAscending(){
         int j = 1;
-        int i = 0;
+        int i = j-1;
 
-        while (j <= apps.size()){
-            apps.get(i).getAppName().compareToIgnoreCase(apps.get(j).getAppName());
-            swapApps (apps, i, j);
-            j++; i++;
+        while (j <= apps.size()-1) {
+            if (apps.get(i).getAppName().compareToIgnoreCase(apps.get(j).getAppName()) > 0) {
+                swapApps(apps, i, j);
+                j++;
+                i++;
+            } // failing test, not sorting
         }
     }
 
