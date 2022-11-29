@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="81823a6c-4f91-41e5-86d1-6f7e1b545225" name="Changes" comment="AppStoreAPI written">
+    <list default="true" id="81823a6c-4f91-41e5-86d1-6f7e1b545225" name="Changes" comment="28thNov">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/controllers/AppStoreAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/AppStoreAPI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/App.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,6 +37,9 @@
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectId" id="2Huwa0Bjo41YLwi4TEZm1LRfFZH" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -69,8 +73,8 @@
       <recent name="$PROJECT_DIR$/lib" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.AppStoreAPITest$ListingMethods.ListAllAppsAboveOrEqualAStarRatingReturnsAppsWhenArrayListHasApps">
-    <configuration name="AppStoreAPITest$ListingMethods.ListAllAppsAboveOrEqualAStarRatingReturnsAppsWhenArrayListHasApps" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager">
+    <configuration name="AppStoreAPITest$CountingMethods.NumberOfAppsByChosenDeveloperReturnsAppsWhenMatchingAppsByDeveloper" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JenneferCullinan" />
       <extension name="coverage">
         <pattern>
@@ -79,14 +83,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="controllers.AppStoreAPITest" />
-      <option name="MAIN_CLASS_NAME" value="controllers.AppStoreAPITest$ListingMethods" />
-      <option name="METHOD_NAME" value="ListAllAppsAboveOrEqualAStarRatingReturnsAppsWhenArrayListHasApps" />
+      <option name="MAIN_CLASS_NAME" value="controllers.AppStoreAPITest$CountingMethods" />
+      <option name="METHOD_NAME" value="NumberOfAppsByChosenDeveloperReturnsAppsWhenMatchingAppsByDeveloper" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AppStoreAPITest$ListingMethods.ListAllAppsAboveOrEqualAStarRatingReturnsNoAppsWhenArrayIsEmpty" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AppStoreAPITest$CountingMethods.NumberOfAppsByChosenDeveloperReturnsNoAppsWhenNoAppsByDeveloper" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JenneferCullinan" />
       <extension name="coverage">
         <pattern>
@@ -95,14 +99,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="controllers.AppStoreAPITest" />
-      <option name="MAIN_CLASS_NAME" value="controllers.AppStoreAPITest$ListingMethods" />
-      <option name="METHOD_NAME" value="ListAllAppsAboveOrEqualAStarRatingReturnsNoAppsWhenArrayIsEmpty" />
+      <option name="MAIN_CLASS_NAME" value="controllers.AppStoreAPITest$CountingMethods" />
+      <option name="METHOD_NAME" value="NumberOfAppsByChosenDeveloperReturnsNoAppsWhenNoAppsByDeveloper" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AppStoreAPITest$ListingMethods.ListAllAppsByNameReturnsAppsWhenArrayListHasApps" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AppStoreAPITest$ReportingMethods" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JenneferCullinan" />
       <extension name="coverage">
         <pattern>
@@ -111,14 +115,29 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="controllers.AppStoreAPITest" />
-      <option name="MAIN_CLASS_NAME" value="controllers.AppStoreAPITest$ListingMethods" />
-      <option name="METHOD_NAME" value="ListAllAppsByNameReturnsAppsWhenArrayListHasApps" />
+      <option name="MAIN_CLASS_NAME" value="controllers.AppStoreAPITest$ReportingMethods" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AppStoreAPITest$SearchingMethods.getAppByNameReturnsAppFoundWhenArrayListHasMatchingName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JenneferCullinan" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="controllers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="controllers.AppStoreAPITest" />
+      <option name="MAIN_CLASS_NAME" value="controllers.AppStoreAPITest$SearchingMethods" />
+      <option name="METHOD_NAME" value="getAppByNameReturnsAppFoundWhenArrayListHasMatchingName" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AppStoreAPITest$ListingMethods.ListAllAppsByNameReturnsNoAppsWhenArrayListIsEmpty" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AppStoreAPITest$SearchingMethods.getAppByNameReturnsNoAppsWhenArrayListHasNoMatchingName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JenneferCullinan" />
       <extension name="coverage">
         <pattern>
@@ -127,24 +146,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="controllers.AppStoreAPITest" />
-      <option name="MAIN_CLASS_NAME" value="controllers.AppStoreAPITest$ListingMethods" />
-      <option name="METHOD_NAME" value="ListAllAppsByNameReturnsNoAppsWhenArrayListIsEmpty" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AppStoreAPITest$ListingMethods.listAllProductivityAppsReturnsAppsWhenArrayListHasApps" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="JenneferCullinan" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="controllers.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="controllers.AppStoreAPITest" />
-      <option name="MAIN_CLASS_NAME" value="controllers.AppStoreAPITest$ListingMethods" />
-      <option name="METHOD_NAME" value="listAllProductivityAppsReturnsAppsWhenArrayListHasApps" />
+      <option name="MAIN_CLASS_NAME" value="controllers.AppStoreAPITest$SearchingMethods" />
+      <option name="METHOD_NAME" value="getAppByNameReturnsNoAppsWhenArrayListHasNoMatchingName" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -152,11 +155,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.AppStoreAPITest$ListingMethods.ListAllAppsAboveOrEqualAStarRatingReturnsAppsWhenArrayListHasApps" />
-        <item itemvalue="JUnit.AppStoreAPITest$ListingMethods.ListAllAppsAboveOrEqualAStarRatingReturnsNoAppsWhenArrayIsEmpty" />
-        <item itemvalue="JUnit.AppStoreAPITest$ListingMethods.ListAllAppsByNameReturnsAppsWhenArrayListHasApps" />
-        <item itemvalue="JUnit.AppStoreAPITest$ListingMethods.ListAllAppsByNameReturnsNoAppsWhenArrayListIsEmpty" />
-        <item itemvalue="JUnit.AppStoreAPITest$ListingMethods.listAllProductivityAppsReturnsAppsWhenArrayListHasApps" />
+        <item itemvalue="JUnit.AppStoreAPITest$ReportingMethods" />
+        <item itemvalue="JUnit.AppStoreAPITest$SearchingMethods.getAppByNameReturnsAppFoundWhenArrayListHasMatchingName" />
+        <item itemvalue="JUnit.AppStoreAPITest$CountingMethods.NumberOfAppsByChosenDeveloperReturnsAppsWhenMatchingAppsByDeveloper" />
+        <item itemvalue="JUnit.AppStoreAPITest$SearchingMethods.getAppByNameReturnsNoAppsWhenArrayListHasNoMatchingName" />
+        <item itemvalue="JUnit.AppStoreAPITest$CountingMethods.NumberOfAppsByChosenDeveloperReturnsNoAppsWhenNoAppsByDeveloper" />
       </list>
     </recent_temporary>
   </component>
@@ -176,7 +179,12 @@
       <workItem from="1669477243072" duration="10929000" />
       <workItem from="1669489760416" duration="14214000" />
       <workItem from="1669634298085" duration="4511000" />
-      <workItem from="1669656755249" duration="14375000" />
+      <workItem from="1669656755249" duration="14418000" />
+      <workItem from="1669725160764" duration="70000" />
+      <workItem from="1669731678342" duration="255000" />
+      <workItem from="1669732044465" duration="7853000" />
+      <workItem from="1669744492473" duration="2508000" />
+      <workItem from="1669747072628" duration="13457000" />
     </task>
     <task id="LOCAL-00001" summary="Setup">
       <created>1669150692281</created>
@@ -241,7 +249,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669558106958</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="28thNov">
+      <created>1669674088245</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1669674088245</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -278,6 +293,24 @@
     <MESSAGE value="Game/Prod app testing complete" />
     <MESSAGE value="26th Nov" />
     <MESSAGE value="AppStoreAPI written" />
-    <option name="LAST_COMMIT_MESSAGE" value="AppStoreAPI written" />
+    <MESSAGE value="28thNov" />
+    <option name="LAST_COMMIT_MESSAGE" value="28thNov" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/JenneferCullinan$AppStoreAPITest.ic" NAME="AppStoreAPITest Coverage Results" MODIFIED="1669759077861" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>controllers.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/JenneferCullinan$ProductivityAppTest.ic" NAME="ProductivityAppTest Coverage Results" MODIFIED="1669739506297" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>models.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/JenneferCullinan$AppStoreAPITest_SortingMethods_sortByNameAscendingReOrdersList.ic" NAME="AppStoreAPITest$SortingMethods.sortByNameAscendingReOrdersList Coverage Results" MODIFIED="1669751430879" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>controllers.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/JenneferCullinan$GameAppTest.ic" NAME="GameAppTest Coverage Results" MODIFIED="1669739474446" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>models.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/JenneferCullinan$EducationAppTest.ic" NAME="EducationAppTest Coverage Results" MODIFIED="1669739427235" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>models.*</FILTER>
+    </SUITE>
   </component>
 </project>

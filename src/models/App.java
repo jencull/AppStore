@@ -16,7 +16,7 @@ public abstract class App {
 
     public App (Developer developer, String appName, double appSize, double appVersion, double appCost) {
         this.developer = new Developer(developer.getDeveloperName(), developer.getDeveloperWebsite());
-        this.appName = appName;
+        this.appName = appName; //this.developer = developer; setAppName(appName) etc
 
         if (Utilities.validRange(appSize, 1,1000)) {
             this.appSize = appSize;

@@ -3,7 +3,6 @@ package controllers;
 import com.thoughtworks.xstream.XStream;
 import com.thoughtworks.xstream.io.xml.DomDriver;
 import models.*;
-import utils.*;
 import utils.ISerializer;
 
 import java.io.FileReader;
@@ -12,9 +11,7 @@ import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Collections;
 
-import static java.lang.Math.random;
 import static utils.RatingUtility.generateRandomRating;
 
 public class AppStoreAPI implements ISerializer {
@@ -171,14 +168,16 @@ public class AppStoreAPI implements ISerializer {
      */
     public App getAppByName (String name) {
 
-        if (isValidAppName(name)) {
-            App app = getAppByName(name);
+        if (isValidAppName(name.toLowerCase())) {
+            App app = getAppByName(name.toLowerCase());
             return app;
         }
         else {
             return null;
         }
     }
+
+
 
     //Reporting methods
 
@@ -190,7 +189,7 @@ public class AppStoreAPI implements ISerializer {
         String list = "";
 
         for (App app : apps) {
-            list += "\n" + apps.indexOf(apps) + ": " + apps;
+            list += "\n" + apps.indexOf(app) + ": " + app;
         }
         if (apps.isEmpty()) {
             return "No apps";
@@ -300,19 +299,21 @@ public class AppStoreAPI implements ISerializer {
     }
 
     public String listAllAppsAboveOrEqualAGivenStarRating (int rating) {
-        String list = "";
 
-       for (App app : apps) {
-               if (rating >= app.calculateRating()) {
-                   list += "\n" + apps.indexOf(app) + ": " + app;
-               }
-           }
-       if (list.isEmpty()) {
-           return "No apps have a rating of " + rating + " or above";
-       }
-       else {
-           return list;
-       }
+        if (apps.isEmpty()) {
+            return "No apps have a rating of " + rating + " or above";
+        } else {
+            String list = "";
+            for (int i = 0; i < apps.size(); i++) {
+                if (apps.get(i).calculateRating() >= rating)
+                    list += i + ": " + apps.get(i) + "\n";
+            }
+            if (list.equals("")) {
+                return "no apps have a rating higher than " + rating;
+            } else {
+                return list;
+            }
+        }
     }
 
     /**
@@ -382,8 +383,6 @@ public class AppStoreAPI implements ISerializer {
     /**
      * Method to generate a random number to select an app from the arrayList
      * @return App located at the random index number
-     * credit to https://www.educative.io/answers/how-to-generate-random-numbers-in-java for
-     * how to change a double to an int while using the Math.random method
      */
     public App randomApp () {
         int max = apps.size() - 1;
@@ -397,33 +396,35 @@ public class AppStoreAPI implements ISerializer {
     }
 
     /**
-     * https://www.geeksforgeeks.org/how-to-swap-two-elements-in-an-arraylist-in-java
+     *Method to swap two items in a list
      * @param apps the arrayList
      * @param i int representing the index number of first object in swap
      * @param j int representing the index number of second object in swap
      */
-
-    private void swapApps (List <App> apps, int i, int j) {
-        Collections.swap(apps, i, j);
+    private void swapApps(List<App> apps, int i, int j) {
+        App smaller = apps.get(i);
+        App bigger = apps.get(j);
+        apps.set(i,bigger);
+        apps.set(j,smaller);
     }
 
     /**
      *
      */
     public void sortAppsByNameAscending(){
-        int j = 1;
-        int i = j-1;
 
-        while (j <= apps.size()-1) {
-            if (apps.get(i).getAppName().compareToIgnoreCase(apps.get(j).getAppName()) > 0) {
-                swapApps(apps, i, j);
-                j++;
-                i++;
-            } // failing test, not sorting
-        }
+       for (int i = apps.size() -1; i >= 0; i--) {
+
+           int highIndex = 0;
+
+           for (int j = 0; j <= i; j++) {
+               if (apps.get(j).getAppName().compareTo(apps.get(highIndex).getAppName()) > 0) {
+                   highIndex = j;
+               }
+           }
+           swapApps(apps, i, highIndex);
+       }
     }
-
-
 
     public void simulateRatings(){
         for (App app :apps) {
@@ -437,7 +438,6 @@ public class AppStoreAPI implements ISerializer {
      * @return boolean, true if the name is valid, otherwise false
      */
     public boolean isValidAppName (String appName) {
-
         boolean isValidName = false;
 
         if (apps.isEmpty()) {
@@ -452,6 +452,8 @@ public class AppStoreAPI implements ISerializer {
         }
         return isValidName;
     }
+
+
 
     /**
      * Method to check index number of an app in the arrayList is valid
